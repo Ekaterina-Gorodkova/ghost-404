@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101113">
+  <meta name="description" content="Сотрудник покинул этот мир, но всё ещё числится на созвоне. Попробуйте вызвать его — если осмелитесь.">
+  <title>404 — Сотрудник не найден</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/qrcode.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="Afterlife office — главная"><span class="brand-mark" aria-hidden="true">a.</span> afterlife<span class="wordmark-office"> / office</span></a>
+    <span class="header-note"><span class="signal-dot"></span> связь с реальностью потеряна</span>
+    <span class="edition">HALLOWEEN EDITION</span>
+  </header>
+
+  <main>
+    <div class="eyebrow"><span></span> ОТДЕЛ ПОТУСТОРОННИХ ДЕЛ <span></span></div>
+    <div class="scene" aria-hidden="true">
+      <div class="error-code">404</div>
+      <span class="spark spark-one">+</span><span class="spark spark-two">+</span>
+      <span class="lost-label">no signal<span class="signal-bars"><i></i><i></i><i></i></span></span>
+      <div class="ghost-float">
+        <svg id="ghost" class="ghost" viewBox="0 0 240 270" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sheet" x1=".15" y1=".15" x2=".85" y2=".85" objectBoundingBox="true"><stop stop-color="#fffefa"/><stop offset=".6" stop-color="#f0eee8"/><stop offset="1" stop-color="#c4c9d2"/></linearGradient>
+            <linearGradient id="ear" x2="1" y2="1"><stop stop-color="#344769"/><stop offset="1" stop-color="#152038"/></linearGradient>
+          </defs>
+          <path d="M58 114C41 110 30 119 22 139c-4 11 2 16 10 12l28-17M181 114c18-5 29 5 37 25 4 11-2 16-10 12l-28-17" fill="#eceeea"/>
+          <path d="M51 112c0-50 27-79 69-79s69 29 69 79c0 58 8 80 16 103 4 12-4 18-15 12l-21-13c-6-4-12-3-17 2l-16 17c-8 9-16 9-24 0l-15-16c-5-6-12-7-19-3l-19 12c-12 7-22 1-18-11 8-25 10-56 10-103Z" fill="url(#sheet)"/>
+          <path d="M70 70c11-19 27-26 45-27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+          <g class="ghost-eyes" fill="#202633"><ellipse cx="95" cy="118" rx="8" ry="12"/><ellipse cx="145" cy="118" rx="8" ry="12"/></g>
+          <ellipse cx="78" cy="137" rx="10" ry="5" fill="#e9aaa1" opacity=".5"/><ellipse cx="162" cy="137" rx="10" ry="5" fill="#e9aaa1" opacity=".5"/>
+          <path d="M112 143q8 9 16 0" fill="none" stroke="#333946" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M47 113V98c0-47 31-76 73-76s73 29 73 76v15" fill="none" stroke="#111a2a" stroke-width="15"/>
+          <path d="M47 94c2-39 32-66 73-66s70 27 73 66" fill="none" stroke="#354665" stroke-width="6"/>
+          <rect x="36" y="94" width="27" height="53" rx="12" fill="#111a2a"/><rect x="37" y="98" width="17" height="44" rx="8" fill="url(#ear)"/>
+          <rect x="177" y="94" width="27" height="53" rx="12" fill="#111a2a"/><rect x="186" y="98" width="17" height="44" rx="8" fill="url(#ear)"/>
+          <path d="M190 145c0 15-15 24-29 24" fill="none" stroke="#263650" stroke-width="4" stroke-linecap="round"/><rect x="149" y="164" width="18" height="9" rx="4.5" fill="#263650"/>
+        </svg>
+      </div>
+      <span class="ghost-shadow"></span>
+    </div>
+
+    <section class="message" aria-labelledby="page-title">
+      <h1 id="page-title"><span class="sr-only">404 — </span>СОТРУДНИК НЕ НАЙДЕН</h1>
+      <p class="intro">Сотрудник покинул этот мир,<br>но всё ещё числится на созвоне.</p>
+      <div class="presence"><span>Статус:</span><strong>👻 Offline forever</strong></div>
+      <p class="last-seen">Последняя активность: <span>перед дедлайном.</span></p>
+      <button id="call-button" class="primary-button" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        Вызвать сотрудника
+      </button>
+      <div class="response-space"><p id="call-response" role="status" aria-live="polite" aria-atomic="true">Возможно, он просто отошёл. Очень далеко.</p></div>
+      <noscript><p class="no-script">Для вызова сотрудника и создания QR-кода включите JavaScript.</p></noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-copy">Тело в офисе. Душа в отпуске.</span>
+    <button id="open-qr" class="text-button" type="button" aria-haspopup="dialog"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM15 15h3v3h3v3h-6zM21 12v3M12 3v9H3M12 15v6"/></svg> QR для бейджика <span aria-hidden="true">↗</span></button>
+    <span class="footer-date">31 / 10 <span aria-hidden="true">✦</span> НА СВЯЗИ С ТЕМ СВЕТОМ</span>
+  </footer>
+
+  <dialog id="qr-dialog" aria-labelledby="qr-title">
+    <button id="close-qr" class="close-button" type="button" aria-label="Закрыть">×</button>
+    <p class="dialog-eyebrow">ПРОПУСК НА ТОТ СВЕТ</p>
+    <h2 id="qr-title">Призрак, предъявите QR.</h2>
+    <p class="dialog-description">Укажите опубликованный адрес этой страницы — коллеги попадут прямо к призраку.</p>
+    <form id="qr-form" novalidate>
+      <label for="site-url">Публичная ссылка на сайт</label>
+      <input id="site-url" name="url" type="url" placeholder="https://username.github.io/halloween/" autocomplete="url" spellcheck="false" required aria-describedby="url-error">
+      <p id="url-error" class="error-message" role="alert"></p>
+      <button class="primary-button" type="submit">Создать QR-код</button>
+    </form>
+    <div id="qr-result" hidden>
+      <canvas id="qr-canvas" role="img" aria-label="QR-код с публичной ссылкой на страницу"></canvas>
+      <a id="encoded-link" target="_blank" rel="noopener noreferrer"></a>
+      <a id="download-qr" class="primary-button download-button" download="ghost-office-qr.png">Скачать PNG <span aria-hidden="true">↓</span></a>
+      <p class="print-note">Печатайте от 4 × 4 см, сохраняя белые поля.<br>Перед печатью проверьте QR камерой телефона.</p>
+    </div>
+  </dialog>
+</body>
+</html>
